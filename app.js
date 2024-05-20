@@ -21,6 +21,8 @@ app.use(express.static(publicdirectory))
 
 
 // app.use(express.static(path.join(__dirname, './assets')));
+// app.use(express.static(path.join(__dirname, './assets')));
+
 
 
 
