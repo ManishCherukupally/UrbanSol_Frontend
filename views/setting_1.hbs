@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div style="display: flex; justify-content:end">
+            <button id="saveButton" style="width: 15%;height: 3rem; background-color: #d10000; border-radius: 10px; display: flex; justify-content: center;align-items: center;
+                font-size:larger; font-weight:500; color: white">Save</button>
+        </div>
+        <br />
+        {{!-- <div class="present">
+            <h5>Present Value</h5>
+        </div> --}}
+        <div class="settinggrid-container">
+
+            <h3>Total Cycle Time</h3>
+            <p id="tcTime" style="font-size:x-large;">12 : 12 Hrs</p>
+            <input type="text" id="tcTimeInput" style="display: none; font-size:x-large; width:40%; height:auto" />
+            <button id="editButton" style="width: 15%; height: 2rem;">Edit</button>
+
+
+            <h3>FWD Motor Time</h3>
+            <p id="fwdTime" style="font-size:x-large;">123 Sec</p>
+            <input type="text" id="fwdInput" style="display: none; font-size:x-large; width:40%; height:auto" />
+            <button id="fwdEdit" style="width: 15%; height: 2rem;">Edit</button>
+
+
+
+            <h3>Wait Time</h3>
+            <p id="wait1" style="font-size:x-large;">125 Sec</p>
+            <input type="text" id="wait1Input" style="display: none; font-size:x-large; width:40%; height:auto" />
+            <button id="wait1Edit" style="width: 15%; height: 2rem;">Edit</button>
+
+
+
+            <h3>REV Motor Time</h3>
+            <p id="revTime" style="font-size:x-large;">130 Sec</p>
+            <input type="text" id="revInput" style="display: none; font-size:x-large; width:40%; height:auto" />
+            <button id="revEdit" style="width: 15%; height: 2rem;">Edit</button>
+
+
+
+            <h3>Wait Time</h3>
+            <p id="wait2" style="font-size:x-large;">125 Sec</p>
+            <input type="text" id="wait2Input" style="display: none; font-size:x-large; width:40%; height:auto" />
+            <button id="wait2Edit" style="width: 15%; height: 2rem;">Edit</button>
+
+
+
+            <h3>Wait Time in Cycle</h3>
+            <p id="waitCycle" style="font-size:x-large;">12 : 12 Min</p>
+            <input type="text" id="waitCycleInput" style="display: none; font-size:x-large; width:40%; height:auto" />
+            <button id="waitCycleEdit" style="width: 15%; height: 2rem;">Edit</button>
+
+        </div>
+
+    </div>
+
+    <script src="setting_1.js"></script>
+</body>
+
+</html>

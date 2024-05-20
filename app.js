@@ -38,6 +38,10 @@ app.get('/manual', (req, res) => {
     res.render('manual')
 })
 
+app.get('/setting1', (req, res) => {
+    res.render('setting_1')
+})
+
 
 
 
@@ -46,6 +50,6 @@ app.get('/manual', (req, res) => {
 
 // })
 
-app.listen(5000, () => {
+app.listen(5000, '0.0.0.0', () => {
     console.log("server is running");
 })

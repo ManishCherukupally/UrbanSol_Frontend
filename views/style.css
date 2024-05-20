@@ -122,3 +122,27 @@ hr {
     /* Three equal-width columns */
     gap: 20px;
 }
+
+/* setting-1 screen style */
+
+.present {
+    display: flex;
+    justify-content: center;
+}
+
+.data_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.settinggrid-container {
+    align-items: center;
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    /* Three equal-width columns */
+    gap: 20px;
+
+    /* Gap between grid items */
+}

@@ -209,11 +209,11 @@ const mainFunction = (data) => {
 function ForwardsendMessage() {
 
     let statusColor = document.getElementById('forward_btn')
-    let status = statusColor.style.background === "green" ? 'off' : 'on'
+    let status = statusColor.style.background === "green" ? 'false' : 'true'
     console.log(status)
     const messageObj = {
 
-        Main_Motor_F: status
+        MMF: status
     }
     let url = `ws://192.168.29.144:8765?screen=screen2`
 
@@ -236,11 +236,11 @@ function ForwardsendMessage() {
 
 function ReversesendMessage() {
     let statusColor = document.getElementById('reverse_btn')
-    let status = statusColor.style.background === "green" ? 'off' : 'on'
+    let status = statusColor.style.background === "green" ? 'false' : 'true'
     console.log(status)
     const messageObj = {
 
-        Main_Motor_r: status
+        MMR: status
     }
     let url = `ws://192.168.29.144:8765?screen=screen2`
 
@@ -257,11 +257,11 @@ function ReversesendMessage() {
 
 function BlowersendMessage() {
     let statusColor = document.getElementById('blower_btn')
-    let status = statusColor.style.background === "green" ? 'off' : 'on'
+    let status = statusColor.style.background === "green" ? 'false' : 'true'
     console.log(status)
     const messageObj = {
 
-        Blower: status
+        Blower_Motor: status
     }
     let url = `ws://192.168.29.144:8765?screen=screen2`
 
@@ -278,7 +278,7 @@ function BlowersendMessage() {
 
 function HeatersendMessage() {
     let statusColor = document.getElementById('heaterbt')
-    let status = statusColor.style.background === "green" ? 'off' : 'on'
+    let status = statusColor.style.background === "green" ? 'false' : 'true'
     console.log(status)
     const messageObj = {
 
@@ -299,7 +299,7 @@ function HeatersendMessage() {
 
 function ACRsendMessage() {
     let statusColor = document.getElementById('acrSwitchbtn')
-    let status = statusColor.style.background === "green" ? 'off' : 'on'
+    let status = statusColor.style.background === "green" ? 'false' : 'true'
     console.log(status)
     const messageObj = {
 
