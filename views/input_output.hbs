@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input_Output</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="grid-container">
+            <h1>Input</h1>
+            <h1>Output</h1>
+
+            <div class="input-card">
+
+                <div class="divData">
+                    <h3>Main Motor Trip</h3>
+                    <div id="mmtstatusbtn" class="statusbtn"
+                        style="width: 15%; background-color: green; border-radius: 10%;">
+                        <p id="mmtStatus"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="divData">
+                    <h3>Blower Motor Trip</h3>
+                    <div id="blowerTripstatusbtn" class="statusbtn"
+                        style="width: 15%; background-color: #d10000; border-radius: 10%;">
+                        <p id="blowerTripStatus"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="divData">
+                    <h3>Door Open</h3>
+                    <div id="DoorOpenstatusbtn" class="statusbtn"
+                        style="width: 15%; background-color: green; border-radius: 10%;">
+                        <p id="DoorOpenStatus"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="divData">
+                    <h3>SPP OK</h3>
+                    <div id="Sppstatusbtn" class="statusbtn"
+                        style="width: 15%; background-color: #d10000; border-radius: 10%;">
+                        <p id="SppStatus"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="divData">
+                    <h3>Emergency Switch</h3>
+                    <div id="Eswitchstatusbtn" class="statusbtn"
+                        style="width: 15%; background-color: #d10000; border-radius: 10%;">
+                        <p id="EswitchStatus"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="output-card">
+
+                <div class="divData">
+                    <h3>Main Motor Forward</h3>
+                    <div class="statusbtn" style="width: 15%; background-color: #d10000; border-radius: 10%;"
+                        id="mmfbt">
+                        <p id="mmf_status"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="divData">
+                    <h3>Main Motor Reverse</h3>
+                    <div id="mmrbt" class="statusbtn"
+                        style="width: 15%; background-color: #d10000; border-radius: 10%;">
+                        <p id="mmr_status"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="divData">
+                    <h3>Blower Motor</h3>
+                    <div id="blowerbt" class="statusbtn"
+                        style="width: 15%; background-color: #d10000; border-radius: 10%;">
+                        <p id="bm_status"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="divData">
+                    <h3>Heater</h3>
+                    <div id="heaterbt" class="statusbtn"
+                        style="width: 15%; background-color: #d10000; border-radius: 10%;">
+                        <p id="heater_status"
+                            style="font-size: large; font-weight: 600; color: aliceblue;  display: flex; justify-content: center;align-items: center;">
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="/manual"><button>Click to open Manul page</button></a>
+        </div>
+    </div>
+    <script src="input_output.js"></script>
+</body>
+
+</html>

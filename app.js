@@ -7,20 +7,20 @@ const express = require('express')
 
 const path = require('path')
 
-const app  = express()
+const app = express()
 
 const router = express.Router()
 
-app.set('view engine','hbs')
+app.set('view engine', 'hbs')
 
-app.set('views',path.join(__dirname,"views"))
+app.set('views', path.join(__dirname, "views"))
 
-const publicdirectory = path.join(__dirname,"./views")
+const publicdirectory = path.join(__dirname, "./views")
 
 app.use(express.static(publicdirectory))
 
 
-app.use(express.static(path.join( __dirname, './assets')));
+// app.use(express.static(path.join(__dirname, './assets')));
 
 
 
@@ -28,19 +28,14 @@ app.use(express.static(path.join( __dirname, './assets')));
 
 
 
-app.get('/',(req,res)=>{
-    res.render('first')
+app.get('/', (req, res) => {
+    res.render('input_output')
 })
 
-app.get('/2',(req,res)=>{
-    res.render('second')
+app.get('/manual', (req, res) => {
+    res.render('manual')
 })
-app.get('/3',(req,res)=>{
-    res.render('third')
-})
-app.get('/4',(req,res)=>{
-    res.render('fourth')
-})
+
 
 
 
@@ -49,6 +44,6 @@ app.get('/4',(req,res)=>{
 
 // })
 
-app.listen(5000,()=>{
+app.listen(5000, () => {
     console.log("server is running");
 })
