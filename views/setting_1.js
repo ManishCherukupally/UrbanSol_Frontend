@@ -1,3 +1,38 @@
+// function websocket() {
+
+//     let url = `ws://192.168.29.144:8765?screen=screen1`
+
+//     const socket = new WebSocket(url)
+
+//     socket.onopen = (event) => {
+//         console.log("websocket established", event);
+
+//         // socket.send(JSON.stringify(obj2));
+
+//     }
+//     socket.onmessage = (event) => {
+//         const res = JSON.parse(event.data)
+//         console.log(res)
+
+//         mainFunction(res)
+//         // console.log('Message from server:', event);
+//     }
+//     socket.onclose = () => {
+
+//         console.log('websocket connection closed');
+//         // setTimeout(websocket, reconnectDelay);
+
+//     }
+//     socket.onerror = (error) => {
+//         console.log("websocket connection error", error)
+//     }
+
+
+// }
+// websocket()
+
+
+
 const saveButton = document.getElementById("saveButton");
 
 const editButton = document.getElementById("editButton");
