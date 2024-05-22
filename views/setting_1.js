@@ -180,3 +180,9 @@ saveButton.addEventListener("click", function () {
 
 
 });
+
+const s1nextbtn = document.getElementById("s1nextbtn");
+
+s1nextbtn.addEventListener("click", function () {
+    window.location.href = 'setting2';
+});

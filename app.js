@@ -42,6 +42,10 @@ app.get('/setting1', (req, res) => {
     res.render('setting_1')
 })
 
+app.get('/setting2', (req, res) => {
+    res.render('setting_2')
+})
+
 
 
 
