@@ -133,3 +133,15 @@ const backButton = document.getElementById("backButton");
 backButton.addEventListener("click", function () {
     window.location.href = 'setting1';
 });
+
+const homeButton = document.getElementById("homeButton");
+
+homeButton.addEventListener("click", function () {
+    window.location.href = '/';
+});
+
+const nextButton = document.getElementById("nextButton");
+
+nextButton.addEventListener("click", function () {
+    window.location.href = 'setting3';
+});

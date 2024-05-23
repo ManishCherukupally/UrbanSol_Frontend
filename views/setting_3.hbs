@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting-3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="height:100vh;display: flex; flex-direction:column; justify-content:space-between">
+        <div class="header">
+            <h2 style="padding-left: 2%;">DD/MM/YYYY</h2>
+            <h2>SETTING-3</h2>
+            <h2 style="padding-right: 2%;">HH:MM:SS</h2>
+        </div>
+
+        <div class="stng-main-container">
+            <div style="padding:0.5rem; padding-right: 2rem; display:flex; justify-content:end">
+                <button id="saveButton" style="width: auto; height: 3rem; background-color: #d10000; border-radius: 10px; display: flex; justify-content: center;align-items: center;
+                font-size:x-large; font-weight:600; color: white">Save</button>
+            </div>
+            {{!-- <div class="stngtitles">
+                <div style="height: 32px;"></div>
+                <h2 style="padding-left:12% ;">Set Time</h2>
+                <h2 style="padding-right:5% ;"></h2>
+                <div style="padding:0.5rem; padding-right: 2rem">
+                    <button id="saveButton" style="width: 110%; height: 3rem; background-color: #d10000; border-radius: 10px; display: flex; justify-content: center;align-items: center;
+                font-size:x-large; font-weight:600; color: white">Save</button>
+                </div>
+            </div> --}}
+            <div style="display: flex;justify-content:center; padding-right: 12%">
+                <h2>Set Time</h2>
+            </div>
+            <div class="setting3grid-container">
+                <h2>Heater Temp.
+                    <span>
+                        <br />
+                        Cut Off Limit</span>
+                </h2>
+                <p id="cutOffTime" style="font-size:x-large; font-weight:600">123 Sec</p>
+                <input type="text" id="cutOffTimeInput"
+                    style="display: none; font-size:x-large; width:40%; height:auto" />
+                <button id="cutOffButton" style="width: 20%; height: 3rem;font-size:large">Edit</button>
+
+                <h2 class="motoName">Compost Motor <span>
+                        <br />
+                        Direction</span></h2>
+
+                <div class="statusbtn" id="forward_btn"
+                    style="width: 27%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p id="mmf_status" style="font-size: x-large; font-weight: 600; color: aliceblue; ">
+                        Forward</p>
+                </div>
+                <div class="statusbtn" id="reverse_btn"
+                    style="width: 27%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p style="font-size: x-large; font-weight: 600; color: aliceblue; ">
+                        Reverse</p>
+                </div>
+            </div>
+        </div>
+        <div class="stng2footer">
+            <button id="backButton" style="height: 80%; width:20%; font-size:x-large; background-color: rgb(233, 153, 3); border: none;
+                 border-radius: 8px; color:white; font-weight:600; margin-left:1%">BACK</button>
+            <button id="homeButton" style="height: 80%; width:20%; font-size:x-large; background-color:#007AFF; border: none;
+                 border-radius: 8px; color:white; font-weight:600; margin-right:1% ">HOME</button>
+        </div>
+        <script src="setting_3.js"></script>
+
+</body>
+
+</html>

@@ -10,16 +10,17 @@
 </head>
 
 <body>
-    <div class="header">
-        <h2 style="padding-left: 2%;">DD/MM/YYYY</h2>
-        <h2>MANUAL</h2>
-        <h2 style="padding-right: 2%;">HH:MM:SS</h2>
-    </div>
-    <div class="manual-main-container">
+    <div style="height:100vh;display: flex; flex-direction:column; justify-content:space-between">
+        <div class="header">
+            <h2 style="padding-left: 2%;">DD/MM/YYYY</h2>
+            <h2>MANUAL</h2>
+            <h2 style="padding-right: 2%;">HH:MM:SS</h2>
+        </div>
+        <div class="manual-main-container">
 
 
 
-        <!-- <div class="manual-grid-content">
+            <!-- <div class="manual-grid-content">
                 <div style="display: flex;justify-content: space-between;">
                 <h2>Main motor</h2>
                 <div class="statusbtn"
@@ -34,60 +35,61 @@
                 </div>
                 </div>
             </div> -->
-        <div class="motor-grid">
-            <h2 class="motoName">Main motor</h2>
-            <button onclick="ForwardsendMessage()" class="statusbtn" id="forward_btn"
-                style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
-                <p id="mmf_status" style="font-size: x-large; font-weight: 600; color: aliceblue; ">
-                    Forward</p>
-            </button>
-            <button onclick="ReversesendMessage()" class="statusbtn" id="reverse_btn"
-                style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
-                <p style="font-size: x-large; font-weight: 600; color: aliceblue; ">
-                    Reverse</p>
-            </button>
+            <div class="motor-grid">
+                <h2 class="motoName">Main motor</h2>
+                <button onclick="ForwardsendMessage()" class="statusbtn" id="forward_btn"
+                    style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p id="mmf_status" style="font-size: x-large; font-weight: 600; color: aliceblue; ">
+                        Forward</p>
+                </button>
+                <button onclick="ReversesendMessage()" class="statusbtn" id="reverse_btn"
+                    style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p style="font-size: x-large; font-weight: 600; color: aliceblue; ">
+                        Reverse</p>
+                </button>
+            </div>
+
+            <div class="twocolomn-grid">
+                <h2 class="motoName">Blower</h2>
+                <button onclick="BlowersendMessage()" class="statusbtn" id="blower_btn"
+                    style=" width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p id="blowerstatus" style="font-size: large; font-weight: 600; color: aliceblue; ">
+                    </p>
+                </button>
+
+            </div>
+
+
+            <div class="twocolomn-grid">
+                <h2 class="motoName">Heater</h2>
+                <button onclick="HeatersendMessage()" class="statusbtn" id="heaterbt"
+                    style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p id="heater_status" style="font-size: large; font-weight: 600; color: aliceblue; ">
+                    </p>
+                </button>
+
+            </div>
+
+
+            <div class="twocolomn-grid">
+                <h2 class="motoName">ACR</h2>
+                <button onclick="ACRsendMessage()" class="statusbtn" id="acrSwitchbtn"
+                    style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
+                    <p id="acrSwitchStatus" style="font-size: large; font-weight: 600; color: aliceblue; ">
+                    </p>
+                </button>
+
+            </div>
+
         </div>
-
-        <div class="twocolomn-grid">
-            <h2 class="motoName">Blower</h2>
-            <button onclick="BlowersendMessage()" class="statusbtn" id="blower_btn"
-                style=" width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
-                <p id="blowerstatus" style="font-size: large; font-weight: 600; color: aliceblue; ">
-                </p>
-            </button>
-
-        </div>
-
-
-        <div class="twocolomn-grid">
-            <h2 class="motoName">Heater</h2>
-            <button onclick="HeatersendMessage()" class="statusbtn" id="heaterbt"
-                style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
-                <p id="heater_status" style="font-size: large; font-weight: 600; color: aliceblue; ">
-                </p>
-            </button>
-
-        </div>
-
-
-        <div class="twocolomn-grid">
-            <h2 class="motoName">ACR</h2>
-            <button onclick="ACRsendMessage()" class="statusbtn" id="acrSwitchbtn"
-                style="width: 30%;height: auto; background-color: #d10000; border-radius: 10%; display: flex; justify-content: center;align-items: center;">
-                <p id="acrSwitchStatus" style="font-size: large; font-weight: 600; color: aliceblue; ">
-                </p>
-            </button>
-
-        </div>
-
-    </div>
-    <div class="manualfooter">
-        <button style="height: 80%; width:20%; font-size:x-large; background-color:#007AFF; border: none;
+        <div class="manualfooter">
+            <button id="homeButton" style="height: 80%; width:20%; font-size:x-large; background-color:#007AFF; border: none;
                  border-radius: 8px; color:white; font-weight:600;  margin-left:1%">HOME</button>
-        <button style="height: 80%; width:20%; font-size:x-large; background-color: rgb(233, 153, 3); border: none;
+            <button style="height: 80%; width:20%; font-size:x-large; background-color: rgb(233, 153, 3); border: none;
                  border-radius: 8px; color:white; font-weight:600; margin-right:1%">NEXT</button>
+        </div>
+        <script src="manual.js"></script>
     </div>
-    <script src="manual.js"></script>
 </body>
 
 </html>
